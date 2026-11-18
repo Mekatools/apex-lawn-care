@@ -95,9 +95,9 @@
 
         <!-- Mobile Menu Panel (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-[#E5E7EB] px-4 pt-2 pb-6 space-y-3">
-            <a href="#services" class="block px-3 py-2 rounded-lg text-base font-medium text-[#4B5563] hover:bg-brand-light hover:text-brand">Services</a>
-            <a href="#about" class="block px-3 py-2 rounded-lg text-base font-medium text-[#4B5563] hover:bg-brand-light hover:text-brand">About</a>
-            <a href="#contact" class="block px-3 py-2 rounded-lg text-base font-medium text-[#4B5563] hover:bg-brand-light hover:text-brand">Contact</a>
+            <a href="#services" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-[#4B5563] hover:bg-brand-light hover:text-brand">Services</a>
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-[#4B5563] hover:bg-brand-light hover:text-brand">About</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-[#4B5563] hover:bg-brand-light hover:text-brand">Contact</a>
             <div class="pt-2">
                 <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer" class="w-full bg-brand text-white font-medium px-5 py-3 rounded-lg text-center text-sm inline-flex items-center justify-center gap-2 shadow-sm">
                     <i data-lucide="message-circle" class="w-4 h-4"></i>
@@ -107,9 +107,114 @@
         </div>
     </header>
 
-    <!-- JavaScript to initialize icons -->
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 fade-up">
+                    <div class="inline-flex items-center gap-2 bg-brand-light text-brand px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i> Professional Lawn Care
+                    </div>
+                    <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-[#111827] tracking-tight leading-tight">
+                        A pristine lawn, <span class="text-brand">without the hassle.</span>
+                    </h1>
+                    <p class="text-lg text-[#4B5563] max-w-2xl leading-relaxed">
+                        We provide reliable, detail-oriented lawn mowing, weeding, and yard upkeep for homeowners who value their weekends and love a gorgeous yard.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+                        <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer" class="bg-brand hover:bg-brand-dark text-white font-medium px-8 py-3.5 rounded-lg text-center transition-colors shadow-sm inline-flex items-center justify-center gap-2 text-base">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            Book via WhatsApp
+                        </a>
+                        <a href="#services" class="border border-[#E5E7EB] bg-white hover:bg-[#F9FAFB] text-[#111827] font-medium px-8 py-3.5 rounded-lg text-center transition-colors shadow-sm inline-flex items-center justify-center gap-2 text-base">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 fade-up">
+                    <div class="relative rounded-2xl overflow-hidden shadow-sm border border-[#E5E7EB] bg-gray-100 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d69204b56?auto=format&fit=crop&w=800&q=80" alt="Man mowing a lush green lawn professionally" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 lg:py-24 bg-white border-t border-[#E5E7EB]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16 fade-up">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl text-[#111827]">Our Core Services</h2>
+                <p class="text-lg text-[#4B5563]">Everything your outdoor space needs to stay healthy, neat, and vibrant all season long.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm hover:border-brand transition-colors fade-up space-y-4">
+                    <div class="w-12 h-12 bg-brand-light text-brand rounded-lg flex items-center justify-center">
+                        <i data-lucide="scissors" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]">Precision Mowing</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">Regular mowing, precise edge trimming along pathways, and clean blow-offs to keep your turf looking immaculate.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm hover:border-brand transition-colors fade-up space-y-4">
+                    <div class="w-12 h-12 bg-brand-light text-brand rounded-lg flex items-center justify-center">
+                        <i data-lucide="sprout" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]">Weed & Bed Care</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">Meticulous manual weeding for garden beds, soil cultivation, and fresh mulch installation to protect plant health.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm hover:border-brand transition-colors fade-up space-y-4">
+                    <div class="w-12 h-12 bg-brand-light text-brand rounded-lg flex items-center justify-center">
+                        <i data-lucide="sun" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]}$">Seasonal Cleanups</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">Comprehensive yard clearing for spring or autumn, removing fallen leaves, debris, and dead growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Mobile Menu & Animations -->
     <script>
+        // Initialize Lucide Icons
         lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Intersection Observer for fade-up animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>
