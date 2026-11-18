@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Lawn Care | Professional Yard Maintenance</title>
-    <meta name="description" content="Reliable residential lawn mowing, weeding, and yard maintenance services for local homeowners.">
+    <title>Campus Print & Stationery | Print, Xerox & Binding</title>
+    <meta name="description" content="Send your files on WhatsApp and pick them up instantly. Print, xerox, spiral binding, and stationery right outside City College gate.">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Apex Lawn Care">
-    <meta property="og:description" content="Professional residential lawn mowing, weeding, and yard maintenance services.">
+    <meta property="og:title" content="Campus Print & Stationery">
+    <meta property="og:description" content="Send files on WhatsApp for quick printing, xerox, and stationery supplies near City College gate.">
     <meta property="og:type" content="website">
 
     <!-- Google Fonts: Plus Jakarta Sans & Inter -->
@@ -42,7 +42,7 @@
     <!-- Lucide Icons pinned version -->
     <script src="https://unpkg.com/lucide@0.474.0/dist/umd/lucide.min.js"></script>
 
-    <!-- Custom CSS for animations and styling rules -->
+    <!-- Custom CSS for animations, focus states, and styling rules -->
     <style>
         .fade-up {
             opacity: 0;
@@ -60,6 +60,11 @@
                 transition: none;
             }
         }
+        /* Visible focus states for accessibility */
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid #166534;
+            outline-offset: 2px;
+        }
     </style>
 </head>
 <body class="bg-[#FAF9F6] text-[#111827] font-sans antialiased selection:bg-brand selection:text-white">
@@ -68,27 +73,28 @@
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#E5E7EB]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="font-heading font-bold text-xl text-[#111827] flex items-center gap-2">
-                <i data-lucide="shrub" class="w-6 h-6 text-brand"></i>
-                Apex Lawn Care
+                <i data-lucide="printer" class="w-6 h-6 text-brand"></i>
+                Campus Print & Stationery
             </a>
             
             <!-- Desktop Nav Links -->
             <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-[#4B5563]">
                 <a href="#services" class="hover:text-brand transition-colors">Services</a>
-                <a href="#about" class="hover:text-brand transition-colors">About</a>
+                <a href="#prices" class="hover:text-brand transition-colors">Prices</a>
+                <a href="#how-it-works" class="hover:text-brand transition-colors">How It Works</a>
                 <a href="#contact" class="hover:text-brand transition-colors">Contact</a>
             </nav>
 
             <!-- Desktop CTA -->
             <div class="hidden md:block">
-                <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer" class="bg-brand hover:bg-brand-dark text-white font-medium px-5 py-2.5 rounded-lg text-sm transition-colors shadow-sm inline-flex items-center gap-2">
+                <a href="https://wa.me/919999900000?text=Hi%2C%20I%20want%20to%20get%20some%20printouts." target="_blank" rel="noopener noreferrer" class="bg-brand hover:bg-brand-dark text-white font-medium px-5 py-2.5 rounded-lg text-sm transition-colors shadow-sm inline-flex items-center gap-2">
                     <i data-lucide="message-circle" class="w-4 h-4"></i>
-                    Get a Quote
+                    Send Files on WhatsApp
                 </a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-btn" aria-label="Open mobile menu" class="md:hidden p-2 text-[#4B5563] hover:text-[#111827] focus:outline-none focus:ring-2 focus:ring-brand rounded-lg">
+            <button id="menu-btn" aria-label="Open mobile menu" class="md:hidden p-2 text-[#4B5563] hover:text-[#111827] focus:outline-none rounded-lg">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </div>
@@ -96,44 +102,77 @@
         <!-- Mobile Menu Panel (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-[#E5E7EB] px-4 pt-2 pb-6 space-y-3">
             <a href="#services" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-[#4B5563] hover:bg-brand-light hover:text-brand">Services</a>
-            <a href="#about" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-[#4B5563] hover:bg-brand-light hover:text-brand">About</a>
+            <a href="#prices" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-[#4B5563] hover:bg-brand-light hover:text-brand">Prices</a>
+            <a href="#how-it-works" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-[#4B5563] hover:bg-brand-light hover:text-brand">How It Works</a>
             <a href="#contact" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-[#4B5563] hover:bg-brand-light hover:text-brand">Contact</a>
             <div class="pt-2">
-                <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer" class="w-full bg-brand text-white font-medium px-5 py-3 rounded-lg text-center text-sm inline-flex items-center justify-center gap-2 shadow-sm">
+                <a href="https://wa.me/919999900000?text=Hi%2C%20I%20want%20to%20get%20some%20printouts." target="_blank" rel="noopener noreferrer" class="w-full bg-brand text-white font-medium px-5 py-3 rounded-lg text-center text-sm inline-flex items-center justify-center gap-2 shadow-sm">
                     <i data-lucide="message-circle" class="w-4 h-4"></i>
-                    Get a Quote
+                    Send Files on WhatsApp
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative py-20 lg:py-28 overflow-hidden">
+    <section class="relative py-16 lg:py-24 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6 fade-up">
                     <div class="inline-flex items-center gap-2 bg-brand-light text-brand px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
-                        <i data-lucide="sparkles" class="w-4 h-4"></i> Professional Lawn Care
+                        PRINT, XEROX & STATIONERY
                     </div>
                     <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-[#111827] tracking-tight leading-tight">
-                        A pristine lawn, <span class="text-brand">without the hassle.</span>
+                        Print your notes, <span class="text-brand">without the queue.</span>
                     </h1>
                     <p class="text-lg text-[#4B5563] max-w-2xl leading-relaxed">
-                        We provide reliable, detail-oriented lawn mowing, weeding, and yard upkeep for homeowners who value their weekends and love a gorgeous yard.
+                        Send your files on WhatsApp and we will print them and keep them ready. Open Monday to Saturday, 9 AM to 8 PM, right outside City College gate.
                     </p>
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
-                        <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer" class="bg-brand hover:bg-brand-dark text-white font-medium px-8 py-3.5 rounded-lg text-center transition-colors shadow-sm inline-flex items-center justify-center gap-2 text-base">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <a href="https://wa.me/919999900000?text=Hi%2C%20I%20want%20to%20get%20some%20printouts." target="_blank" rel="noopener noreferrer" class="bg-brand hover:bg-brand-dark text-white font-medium px-8 py-3.5 rounded-lg text-center transition-colors shadow-sm inline-flex items-center justify-center gap-2 text-base">
                             <i data-lucide="message-circle" class="w-5 h-5"></i>
-                            Book via WhatsApp
+                            Send Files on WhatsApp
                         </a>
-                        <a href="#services" class="border border-[#E5E7EB] bg-white hover:bg-[#F9FAFB] text-[#111827] font-medium px-8 py-3.5 rounded-lg text-center transition-colors shadow-sm inline-flex items-center justify-center gap-2 text-base">
-                            Explore Services
+                        <a href="#prices" class="border border-[#E5E7EB] bg-white hover:bg-[#F9FAFB] text-[#111827] font-medium px-8 py-3.5 rounded-lg text-center transition-colors shadow-sm inline-flex items-center justify-center gap-2 text-base">
+                            See Prices
                         </a>
                     </div>
                 </div>
                 <div class="lg:col-span-5 fade-up">
-                    <div class="relative rounded-2xl overflow-hidden shadow-sm border border-[#E5E7EB] bg-gray-100 aspect-[4/3]">
-                        <img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&w=800&q=80" alt="Man mowing a lush green lawn professionally" class="w-full h-full object-cover">
+                    <div class="relative rounded-2xl overflow-hidden shadow-sm border border-[#E5E7EB] bg-emerald-900/10 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&w=800&q=80" alt="Stationery and printing shop counter with papers and books" class="w-full h-full object-cover" loading="eager">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Facts Strip -->
+            <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-[#E5E7EB] fade-up">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-brand-light text-brand flex items-center justify-center shrink-0">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-[#4B5563] uppercase tracking-wider font-semibold">Location</p>
+                        <p class="font-heading font-bold text-[#111827] text-sm">Shop 12, College Road, near City College gate</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-brand-light text-brand flex items-center justify-center shrink-0">
+                        <i data-lucide="clock" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-[#4B5563] uppercase tracking-wider font-semibold">Open</p>
+                        <p class="font-heading font-bold text-[#111827] text-sm">Mon-Sat, 9 AM - 8 PM</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-brand-light text-brand flex items-center justify-center shrink-0">
+                        <i data-lucide="zap" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-[#4B5563] uppercase tracking-wider font-semibold">Reply time</p>
+                        <p class="font-heading font-bold text-[#111827] text-sm">Within 10 minutes during shop hours</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,37 +182,228 @@
     <section id="services" class="py-20 lg:py-24 bg-white border-t border-[#E5E7EB]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16 fade-up">
-                <h2 class="font-heading font-bold text-3xl sm:text-4xl text-[#111827]">Our Core Services</h2>
-                <p class="text-lg text-[#4B5563]">Everything your outdoor space needs to stay healthy, neat, and vibrant all season long.</p>
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl text-[#111827]">Our Services & Supplies</h2>
+                <p class="text-lg text-[#4B5563]">Everything students need for college assignments, notes, and projects.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Service 1 -->
                 <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm hover:border-brand transition-colors fade-up space-y-4">
                     <div class="w-12 h-12 bg-brand-light text-brand rounded-lg flex items-center justify-center">
-                        <i data-lucide="scissors" class="w-6 h-6"></i>
+                        <i data-lucide="printer" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="font-heading font-bold text-xl text-[#111827]">Precision Mowing</h3>
-                    <p class="text-[#4B5563] text-sm leading-relaxed">Regular mowing, precise edge trimming along pathways, and clean blow-offs to keep your turf looking immaculate.</p>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]">Black and White Xerox</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">High-speed photocopying for notes and study materials. Clear text quality starting at <span class="font-semibold text-[#111827]">Rs. 1 per page</span>.</p>
                 </div>
                 <!-- Service 2 -->
                 <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm hover:border-brand transition-colors fade-up space-y-4">
                     <div class="w-12 h-12 bg-brand-light text-brand rounded-lg flex items-center justify-center">
-                        <i data-lucide="sprout" class="w-6 h-6"></i>
+                        <i data-lucide="copy" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="font-heading font-bold text-xl text-[#111827]">Weed & Bed Care</h3>
-                    <p class="text-[#4B5563] text-sm leading-relaxed">Meticulous manual weeding for garden beds, soil cultivation, and fresh mulch installation to protect plant health.</p>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]">Colour Printout</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">Vibrant colour printouts for presentations, diagrams, and reports priced at <span class="font-semibold text-[#111827]">Rs. 10 per page</span>.</p>
                 </div>
                 <!-- Service 3 -->
                 <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm hover:border-brand transition-colors fade-up space-y-4">
                     <div class="w-12 h-12 bg-brand-light text-brand rounded-lg flex items-center justify-center">
-                        <i data-lucide="sun" class="w-6 h-6"></i>
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="font-heading font-bold text-xl text-[#111827]}$">Seasonal Cleanups</h3>
-                    <p class="text-[#4B5563] text-sm leading-relaxed">Comprehensive yard clearing for spring or autumn, removing fallen leaves, debris, and dead growth.</p>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]">Spiral and Soft Binding</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">Keep your project reports and compiled notes secure and neatly bound starting <span class="font-semibold text-[#111827]">from Rs. 30</span>.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm hover:border-brand transition-colors fade-up space-y-4">
+                    <div class="w-12 h-12 bg-brand-light text-brand rounded-lg flex items-center justify-center">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]">Lamination</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">Protect your important IDs, certificates, and sheets against moisture and tearing <span class="font-semibold text-[#111827]">from Rs. 20</span>.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm hover:border-brand transition-colors fade-up space-y-4">
+                    <div class="w-12 h-12 bg-brand-light text-brand rounded-lg flex items-center justify-center">
+                        <i data-lucide="file-text" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]">Project & Assignment Printing</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">End-to-end multi-page assignment and thesis printing with <span class="font-semibold text-[#111827]">bulk rates available</span>.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm hover:border-brand transition-colors fade-up space-y-4">
+                    <div class="w-12 h-12 bg-brand-light text-brand rounded-lg flex items-center justify-center">
+                        <i data-lucide="pencil" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]">Stationery</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">Essential student supplies stocked daily: pens, notebooks, files, chart paper, and art supplies.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Price Table Section -->
+    <section id="prices" class="py-20 lg:py-24 border-t border-[#E5E7EB]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16 fade-up">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl text-[#111827]">Transparent Price List</h2>
+                <p class="text-lg text-[#4B5563]">No hidden charges. Clear standard rates for students.</p>
+            </div>
+            
+            <div class="bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden shadow-sm fade-up">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-brand-light border-b border-[#E5E7EB]">
+                            <th class="py-4 px-6 font-heading font-bold text-[#111827]">Item</th>
+                            <th class="py-4 px-6 font-heading font-bold text-[#111827] text-right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-[#E5E7EB] text-sm text-[#4B5563]">
+                        <tr class="hover:bg-[#FAF9F6] transition-colors">
+                            <td class="py-4 px-6 font-medium text-[#111827]">B/W print (A4, single side)</td>
+                            <td class="py-4 px-6 text-right font-semibold text-[#111827]">Rs. 2</td>
+                        </tr>
+                        <tr class="hover:bg-[#FAF9F6] transition-colors">
+                            <td class="py-4 px-6 font-medium text-[#111827]">B/W print (A4, both sides)</td>
+                            <td class="py-4 px-6 text-right font-semibold text-[#111827]">Rs. 3</td>
+                        </tr>
+                        <tr class="hover:bg-[#FAF9F6] transition-colors">
+                            <td class="py-4 px-6 font-medium text-[#111827]">B/W xerox (A4)</td>
+                            <td class="py-4 px-6 text-right font-semibold text-[#111827]">Rs. 1</td>
+                        </tr>
+                        <tr class="hover:bg-[#FAF9F6] transition-colors">
+                            <td class="py-4 px-6 font-medium text-[#111827]">Colour print (A4)</td>
+                            <td class="py-4 px-6 text-right font-semibold text-[#111827]">Rs. 10</td>
+                        </tr>
+                        <tr class="hover:bg-[#FAF9F6] transition-colors">
+                            <td class="py-4 px-6 font-medium text-[#111827]">Spiral binding</td>
+                            <td class="py-4 px-6 text-right font-semibold text-[#111827]">Rs. 40</td>
+                        </tr>
+                        <tr class="hover:bg-[#FAF9F6] transition-colors">
+                            <td class="py-4 px-6 font-medium text-[#111827]">Lamination (A4)</td>
+                            <td class="py-4 px-6 text-right font-semibold text-[#111827]">Rs. 20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center text-xs text-[#4B5563] mt-4 fade-up">Bulk orders of 100+ pages get a discount. Ask on WhatsApp.</p>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 lg:py-24 bg-white border-t border-[#E5E7EB]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16 fade-up">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl text-[#111827]">How It Works</h2>
+                <p class="text-lg text-[#4B5563]">Skip the physical line entirely in 3 simple steps.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm space-y-4 fade-up">
+                    <div class="w-10 h-10 bg-brand text-white font-heading font-bold rounded-lg flex items-center justify-center text-lg">1</div>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]">Send your file on WhatsApp</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">Share the document file along with the number of pages and copies required.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm space-y-4 fade-up">
+                    <div class="w-10 h-10 bg-brand text-white font-heading font-bold rounded-lg flex items-center justify-center text-lg">2</div>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]">We confirm the price</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">You get the total cost calculation and an exact pickup time confirmation.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-xl p-8 shadow-sm space-y-4 fade-up">
+                    <div class="w-10 h-10 bg-brand text-white font-heading font-bold rounded-lg flex items-center justify-center text-lg">3</div>
+                    <h3 class="font-heading font-bold text-xl text-[#111827]">Collect and pay at the shop</h3>
+                    <p class="text-[#4B5563] text-sm leading-relaxed">Walk straight in—your printout is printed, bundled, and ready when you arrive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Students Use Us Section -->
+    <section class="py-20 lg:py-24 border-t border-[#E5E7EB]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 fade-up">
+                    <div class="relative rounded-2xl overflow-hidden shadow-sm border border-[#E5E7EB] bg-emerald-900/10 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="College students studying together" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+                <div class="lg:col-span-7 space-y-6 fade-up">
+                    <h2 class="font-heading font-bold text-3xl sm:text-4xl text-[#111827]">Why Students Use Us</h2>
+                    <ul class="space-y-4 text-lg text-[#4B5563]">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-brand shrink-0 mt-0.5"></i>
+                            <span>Skip the wait during exam and assignment rush hours.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-brand shrink-0 mt-0.5"></i>
+                            <span>Clear standard prices, absolutely no surprises or hidden fees.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-brand shrink-0 mt-0.5"></i>
+                            <span>Open six days a week, from 9 AM to 8 PM right by campus.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact" class="py-20 lg:py-24 bg-white border-t border-[#E5E7EB]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 fade-up">
+            <div class="bg-[#FAF9F6] border border-[#E5E7EB] rounded-2xl p-8 sm:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <div class="w-12 h-12 bg-brand-light text-brand rounded-full flex items-center justify-center">
+                        <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="font-heading font-bold text-3xl sm:text-4xl text-[#111827]">Send us your files now</h2>
+                    <p class="text-base text-[#4B5563] leading-relaxed">
+                        Message us directly on WhatsApp to get instant printouts without waiting in line.
+                    </p>
+                    <div class="space-y-3 pt-2 text-sm text-[#4B5563]">
+                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-brand"></i> +91 99999 00000</p>
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-brand"></i> Shop 12, College Road, near City College gate, Sample City - 000000</p>
+                        <p class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-brand"></i> Mon-Sat, 9 AM - 8 PM. Sunday closed.</p>
+                        <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-brand"></i> hello@campusprint.example</p>
+                    </div>
+                    <div class="pt-2">
+                        <a href="https://wa.me/919999900000?text=Hi%2C%20I%20want%20to%20get%20some%20printouts." target="_blank" rel="noopener noreferrer" class="bg-brand hover:bg-brand-dark text-white font-medium px-8 py-4 rounded-xl text-center transition-colors shadow-sm inline-flex items-center justify-center gap-2 text-base w-full sm:w-auto">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            Send Files on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <!-- Map Link Box -->
+                <div class="bg-white border border-[#E5E7EB] rounded-xl p-6 space-y-4 shadow-sm text-center">
+                    <div class="flex items-center justify-center gap-2 font-heading font-bold text-[#111827]">
+                        <i data-lucide="map" class="w-5 h-5 text-brand"></i>
+                        Find Our Shop
+                    </div>
+                    <p class="text-sm text-[#4B5563]">Located conveniently right outside the City College gate.</p>
+                    <div class="pt-2">
+                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="border border-[#E5E7EB] bg-white hover:bg-[#FAF9F6] text-[#111827] font-medium px-6 py-3 rounded-lg text-sm inline-flex items-center justify-center gap-2 transition-colors shadow-sm w-full">
+                            <i data-lucide="external-link" class="w-4 h-4 text-brand"></i>
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#111827] text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div class="flex items-center gap-2">
+                <i data-lucide="printer" class="w-6 h-6 text-brand"></i>
+                <span class="font-heading font-bold text-lg text-white">Campus Print & Stationery</span>
+            </div>
+            <p class="text-sm text-gray-400">
+                Print | Xerox | Binding | Stationery &bull; Phone: +91 99999 00000
+            </p>
+            <p class="text-xs text-gray-500">
+                &copy; 2026 Campus Print & Stationery. Demo site.
+            </p>
+        </div>
+    </footer>
 
     <!-- JavaScript for Mobile Menu & Animations -->
     <script>
